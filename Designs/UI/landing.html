@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Landing Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- start style -->
+  <style>
+    body {
+      text-align: center;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    #top{
+      background-image: url(images/header-bg.jpg);
+      padding: 5px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+   .wrapper {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+i {
+  padding: 0px 10px;
+}
+
+.wrapper i:nth-child(1) {
+  color: #4867AA;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(1):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+}
+
+.wrapper i:nth-child(2) {
+  color: #1DA1F2;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(2):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+}
+
+.wrapper i:nth-child(3) {
+  color: #813DB4;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(3):hover {
+  margin-top: -10px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+  transform: translate(0, -5);
+}
+.wrapper i:nth-child(4) {
+  color: #fffc00;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+.wrapper i:nth-child(4):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+}
+
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+body {
+  background: #444;
+  
+}
+#logo{
+  padding: 20px;
+}
+.table-bordered {
+    border: 1px solid #000;
+}
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(images/icon.jpg);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.btn-danger {
+      color: #fff;
+      background-color: #d9534f;
+      border-color: #d43f3a;
+      margin-left: 10px;
+    }
+    iframe{
+      opacity: 0.2;
+    }
+  </style>
+  <!-- sytle collapse -->
+</head>
+<body style="background: rgba(0,0,0,0.5); color: #fff;">
+
+  <!-- background video -->
+  <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/WiWg0y63J48" frameborder="0" allowfullscreen></iframe> -->
+
+  <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <iframe frameborder="0" height="100%" width="100%"
+    src="https://youtube.com/embed/WiWg0y63J48?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&mute=1">
+  </iframe>
+</div>
+  <!-- video collapse -->
+
+  <!-- header -->
+  <div class="container-fluid" id="top">
+    <div class="container">
+      <div class="col-md-3" id="logo">
+        <img src="images/logo-web.jpg">
+      </div>
+      <div class="col-md-6"><strong><h1 style="color: #ccc; font-size: 48px; font-family: cursive; padding: 10px; "><b>ORGANIC DIET</b></h1></strong>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">LOG OUT</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+      </div>
+      <div class="col-md-3">
+        <div class="wrapper">
+          <i class="fa fa-5x fa-facebook-square"></i>
+          <i class="fa fa-5x fa-twitter-square"></i>
+          <i class="fa fa-5x fa-instagram"></i>
+          <i class="fa fa-5x fa-snapchat-square"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header collapse -->
+
+  <!-- table -->
+  <div class="container">
+   <div class="row">
+
+
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+
+
+    <!-- FORM  -->      
+    <div class="col-md-12">
+
+     <form class="form-horizontal" id="form-edit-client">
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend style="color: #fff;">RECIPE</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="client-name">FOOD</label>  
+          <div class="col-md-4">
+            <input id="client-name" name="food-name" type="text" placeholder="FOOD" class="form-control input-md">
+              
+          </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="client-email">INGREDIENTS</label>
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-addon"><b>INGREDIENTS</b></span>
+              <input id="client-email" name="ingredients" class="form-control" type="text">
+            </div>
+          
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Button -->
+        
+
+      </fieldset>
+    </form>
+    <div class="form-group">
+          <label class="col-md-4 control-label" for="btn-save"></label>
+          <div class="col-md-4" id="saveupdate">
+            <button id="btn-save" name="btn-save" class="btn btn-success" onclick="addClient()" style="width: 100%;">Save</button><br><br><br>
+          </div>
+        </div>
+
+  </div><br>
+
+
+  <!-- LIST -->
+  <div class=col-md-12>
+
+       <legend style="color: #fff;">LIST OF FOOD AND INGREDIENTS</legend>
+
+     
+      <table class="table table-bordered table-condensed table-hover">
+        <thead>
+          <tr>
+            <td style="text-align: center;">FOOD</td>
+            <th style="text-align: center;">INGREDIENTS</th>
+            <th style="text-align: center;">Actions</th>
+          </tr>
+
+        </thead>
+        <tbody id="form-list-client-body">
+
+        </tbody>
+      </table>
+    
+    
+  </div>
+
+
+  <br> 
+
+  <!-- view -->
+
+
+
+
+</div>
+</div>
+  
+</body>
+</html>
